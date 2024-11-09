@@ -1,2 +1,2 @@
 # Estudos
- Repositório com meus estudos em análise do desenvolvimento.
+ Repositório com meus estudos em análise e desenvolvimento.
