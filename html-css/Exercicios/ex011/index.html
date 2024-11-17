@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mídias em HTML5</title>
+    </head>
+    <body>
+        <h1>Imagem dinâmica</h1>
+        <p>
+            Tente abrir esse site em vários dispositivos com tamanho de tela
+            diferentes, ou mude a escala do navegador...
+        </p>
+        <picture> <!--Tag acompanhada da tag <source media type> para carregar imagens de tamanho diferentes-->
+
+            <source media="(min-width:1970px )" srcset="imagens/foto-e.png" type="image/png">
+
+            <source media="(min-width:1416px )" srcset="imagens/foto-l.png" type="image/png">
+             
+            <source media="(min-width:1050px)" srcset="imagens/foto-g.png" type="image/png"> <!--Se a tela tiver no mínimo 1050px carrega a imagem grande, mais que 1050 carrega a grande.-->
+
+            <source media="(min-width:750px)" srcset="imagens/foto-m.png" type="image/png"> <!--Se a tela tiver no mínimo 750px carrega a imagem média, entre 750 a 1050 carrega a média, abaixo de 750 carrega a pequena.-->
+
+            <img src="imagens/foto-p.png" alt="imagem dinâmica" /> <!--Comecei da pequena, pois ao carregar as imagens,seus tamanhos em pixels no parâmetro min-width ficam de acordo com a resolução da imagem carregada -->
+            
+        </picture> <!--É de estrema importância deixar 50px a mais no min-width para barra de rolagem-->
+    </body>
+</html>
