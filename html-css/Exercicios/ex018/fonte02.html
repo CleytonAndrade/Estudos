@@ -7,16 +7,23 @@
         <style>
             @font-face {                                            /* Parâmetro CSS*/                    
                 font-family: handwriting;                           /* Apelido da fonte */
-                src: url(fonts/handwriting-draft_free-version.ttf); /* Caminho para o arquivo */             
-                       
-            }
-
+                src: url(fonts/handwriting-draft_free-version.ttf); /* Caminho para o arquivo */    
+                }
+            @font-face {
+                font-family:LoremIpsum ;
+                src: url(fonts/LoremIpsum.ttf);
+            }    
             body {
-                font-family: handwriting, serif;
+                font: normal normal 1em LoremIpsum, sans-serif;
+                text-align: justify;
+                width: 900px;
+                font-weight: 600;
             }
 
             h1 {
-                font-size: 3em;
+                font: normal normal 4em  handwriting, sans-serif ;
+                text-align: center;
+                text-shadow: 4px 5px 6px gray;
             }
         </style>
     </head>
