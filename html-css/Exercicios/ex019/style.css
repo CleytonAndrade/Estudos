@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    background-color: hsl(36, 80%, 92%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: hsl(34, 17%, 24%);
+}
+
+h1#principal {
+    text-align: center;
+    color: white;
+    background-color: hsl(34, 17%, 24%);
+    border-radius: 9px;
+}
+
+h2 {
+    color:hsl(34, 17%, 24%);
+}
